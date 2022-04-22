@@ -1,0 +1,489 @@
+<!doctype html>
+<html>
+	<head>
+		<title>Molustele</title>
+		<link rel = "stylesheet" type = "text/css" href = "style.css">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+		<!--- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+		<meta charset="UTF-8">
+		<meta name="description" content="Proiect biologie moluste">
+		<meta name="keywords" content="Moluste, biologie">
+		<meta name="author" content="Purcariu Alexandra, Ifrim Cristian">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div id = "nav">
+			<ul>
+				<li><a href = "#General">General</a></li>
+				<li><a href = "#Gasteropode">Gasteropode</a></li>
+				<li><a href = "#Lameli">Lamelibranhiate</a></li>
+				<li><a href = "#Cefalopode">Cefalopode</a></li>
+				<li style="float:right; background-color: rgba(153, 0, 0, 0.7);"><a href = "#Importanta">Importanta</a></li>
+			</ul>
+		</div>
+				<!-- Slideshow container -->
+		<div class="slideshow-container">
+
+		  <!-- Full-width images with number and caption text -->
+		  <div class="mySlides fade">
+			<div class="numbertext">1 / 3</div>
+			<img src="img1.jpg" style="width:100%">
+			<div class="text">Gasteropode</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">2 / 3</div>
+			<img src="img2.jpg" style="width:100%">
+			<div class="text">Lamelibranhiate</div>
+		  </div>
+
+		  <div class="mySlides fade">
+			<div class="numbertext">3 / 3</div>
+			<img src="img3.jpg" style="width:100%">
+			<div class="text">Cefalopode</div>
+		  </div>
+
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+		</div>
+		<br>
+
+		<!-- The dots/circles -->
+		<div style="text-align:left">
+		  <span class="dot" onclick="currentSlide(1)"></span> 
+		  <span class="dot" onclick="currentSlide(2)"></span> 
+		  <span class="dot" onclick="currentSlide(3)"></span> 
+		</div>
+		<script>
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			// Next/previous controls
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			// Thumbnail image controls
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("mySlides");
+			  var dots = document.getElementsByClassName("dot");
+			  if (n > slides.length) {slideIndex = 1} 
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none"; 
+			  }
+			  for (i = 0; i < dots.length; i++) {
+				  dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block"; 
+			  dots[slideIndex-1].className += " active";
+			}
+		</script>
+		<br>
+		<div class = "container" id = "General">
+			<h1>Caractere generale</h1>
+			<br>
+			<ul>
+				<li>Majoritatea traiesc in apa marilor, putine in ape dulci sau sunt terestre.</li>
+				<li>Corpul este nesegmentat si moale(de aici si numele), bogat in glande.<br>El este alcatuit din <i>corp, masa viscerala si picior musculos</i>, diferit ca infatisare, adaptat la tipul de locomotie.</li>
+				<li>Simetria este bilaterala, exceptie fac gasteropodele(melcii), unde corpul si cochilia sunt rasucite in spirala.</li>
+				<li>Au o manta provenita din rasfrangerea tegumentului. Intre manta si corp se afla cavitatea paleala in care se gaseste aparatul respirator.</li>
+				<li>Mantaua secreta cochilii sau valve calcaroase.</li>
+				<li>Celomul se pastreaza doar in jurul inimii(pericard) si al gonadei.</li>
+				<li>Sistemul digestiv la unele prezinta piese de masticatie cornoase; se diferentiaza stomacul si hepatopancreasul.</li>
+				<li>Sistemul respirator este branhial sau pulmonar.</li>
+				<li>Sistemul circulator este deschis(cu exceptia cefalopodelor), format din inima situata dorsal, vase de sange si lacune.</li>
+				<li>Sistemul nervos are 3 perechi de ganglioni legati intre ei printre cordoane nervoase si este in legatura cu organele de simt(tentacule, ochi, etc.).</li>
+				<li>Au larva numita trocofora, asemanatoare cu anelidele.</li>
+			</ul>
+		</div>
+		<div class = "container" id = "Gasteropode">
+			<h1>Gasteropodele</h1>
+						<!-- Container for the image gallery -->
+			<br>
+			<div class="gen-container">
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides1">
+				<div class="numbertext1">1 / 6</div>
+				  <img src="g4.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides1">
+				<div class="numbertext1">2 / 6</div>
+				  <img src="g5.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides1">
+				<div class="numbertext1">3 / 6</div>
+				  <img src="g6.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides1">
+				<div class="numbertext1">4 / 6</div>
+				  <img src="g10.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides1">
+				<div class="numbertext1">5 / 6</div>
+				  <img src="g14.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides1">
+				<div class="numbertext1">6 / 6</div>
+				  <img src="g15.png" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev1" onclick="plusSlides1(-1)">&#10094;</a>
+			  <a class="next1" onclick="plusSlides1(1)">&#10095;</a>
+
+			  <!-- Image text -->
+			  <div class="caption-container">
+				<p id="caption"></p>
+			  </div>
+
+			  <!-- Thumbnail images -->
+			  <div class="row">
+				<div class="column">
+				  <img class="demo cursor" src="g4.png" style="width:100%" onclick="currentSlide1(1)" alt="Gasteropode">
+				</div>
+				<div class="column"> 
+				  <img class="demo cursor" src="g5.png" style="width:100%" onclick="currentSlide1(2)" alt="Gasteropode">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="g6.png" style="width:100%" onclick="currentSlide1(3)" alt="Gasteropode">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="g10.png" style="width:100%" onclick="currentSlide1(4)" alt="Gasteropode">
+				</div>
+				<div class="column">
+				  <img class="demo cursor" src="g14.png" style="width:100%" onclick="currentSlide1(5)" alt="Gasteropode">
+				</div> 
+				<div class="column">
+				  <img class="demo cursor" src="g15.png" style="width:100%" onclick="currentSlide1(6)" alt="Gasteropode">
+				</div>
+			  </div>
+			</div>
+			<script>
+				var slideIndex = 1;
+				showSlides1(slideIndex);
+
+				// Next/previous controls
+				function plusSlides1(n) {
+				  showSlides1(slideIndex += n);
+				}
+				
+				// Thumbnail image controls
+				function currentSlide1(n) {
+				  showSlides1(slideIndex = n);
+				}
+				
+				function showSlides1(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides1");
+				  var dots = document.getElementsByClassName("demo");
+				  var captionText = document.getElementById("caption");
+				  if (n > slides.length) {slideIndex = 1}
+				  if (n < 1) {slideIndex = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex-1].style.display = "block";
+				  dots[slideIndex-1].className += " active";
+				  captionText.innerHTML = dots[slideIndex-1].alt;
+				}
+			</script>
+			<br>
+			<ul>
+				<li>Este clasa cu cele mai numeroase specii, multe adaptate la viata terestra.</li>
+				<li>Corpul are <i>cap</i> cu doua perechi de tentacule inegale(in varful celor mari se afla ochii), <i>picior musculos</i> si <i>masa viscerala</i>. Au cochilia spiralata, dar exista si melci fara cochile(limax).</li>
+				<li>Sistemul digestiv prezinta: piese de masticatie cornoase(radula si maxila), glande salivare, hepatopancreas, stomac si intestin.</li>
+				<li>Sistemul respirator este reprezentat prin mantaua vascularizata cu rol de plaman la gasteropodele terestre(melcul de livada) sau prin branhii la cele acvatice(ghiocul).</li>
+				<li>Inima este de obicei, bicamerala formata dintr-un atriu si un ventricul.</li>
+				<li>De obicei, au un singur organ excretor, din cauza rasucirii cochiliei.</li>
+				<li>Inmultirea se face prin oua fara metamorfoza(la melcii terestrii) si cu metamorfoza(larva trocofora) la cei acvatici; sunt hermafrodite.</li>
+				<li class = "reprezentat"><b>Reprenzentanţi</b>: melcul de livada(<i>Helix pomatia</i>), limaxul(<i>Limax maximus</i>), ghiocul(<i>Cypraea tigris</i>), <i>Planorbis</i>, <i>Limnaea</i>.</li>
+			</ul>
+		</div>
+		<div class = "container" id = "Lameli">
+			<h1>Lamelibranhiate</h1>
+			<!-- Container for the image gallery -->
+			<br>
+			<div class="gen-container">
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides2">
+				<div class="numbertext1">1 / 6</div>
+				  <img src="g16.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides2">
+				<div class="numbertext1">2 / 6</div>
+				  <img src="g17.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides2">
+				<div class="numbertext1">3 / 6</div>
+				  <img src="g19.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides2">
+				<div class="numbertext1">4 / 6</div>
+				  <img src="g1.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides2">
+				<div class="numbertext1">5 / 6</div>
+				  <img src="g7.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides2">
+				<div class="numbertext1">6 / 6</div>
+				  <img src="g8.png" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev1" onclick="plusSlides2(-1)">&#10094;</a>
+			  <a class="next1" onclick="plusSlides2(1)">&#10095;</a>
+
+			  <!-- Image text -->
+			  <div class="caption-container">
+				<p id="caption2"></p>
+			  </div>
+
+			  <!-- Thumbnail images -->
+			  <div class="row">
+				<div class="column">
+				  <img class="demo2 cursor" src="g16.png" style="width:100%" onclick="currentSlide2(1)" alt="Lamelibranhiate">
+				</div>
+				<div class="column"> 
+				  <img class="demo2 cursor" src="g17.png" style="width:100%" onclick="currentSlide2(2)" alt="Lamelibranhiate">
+				</div>
+				<div class="column">
+				  <img class="demo2 cursor" src="g19.png" style="width:100%" onclick="currentSlide2(3)" alt="Lamelibranhiate">
+				</div>
+				<div class="column">
+				  <img class="demo2 cursor" src="g1.png" style="width:100%" onclick="currentSlide2(4)" alt="Lamelibranhiate">
+				</div>
+				<div class="column">
+				  <img class="demo2 cursor" src="g7.png" style="width:100%" onclick="currentSlide2(5)" alt="Lamelibranhiate">
+				</div> 
+				<div class="column">
+				  <img class="demo2 cursor" src="g8.png" style="width:100%" onclick="currentSlide2(6)" alt="Lamelibranhiate">
+				</div>
+			  </div>
+			</div>
+			<script>
+				var slideIndex2 = 1;
+				showSlides2(slideIndex2);
+				
+				function plusSlides2(n) {
+				  showSlides2(slideIndex2 += n);
+				}
+				
+				function currentSlide2(n) {
+				  showSlides2(slideIndex2 = n);
+				}
+				
+				function showSlides2(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides2");
+				  var dots = document.getElementsByClassName("demo2");
+				  var captionText = document.getElementById("caption2");
+				  if (n > slides.length) {slideIndex2 = 1}
+				  if (n < 1) {slideIndex2 = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex2-1].style.display = "block";
+				  dots[slideIndex2-1].className += " active";
+				  captionText.innerHTML = dots[slideIndex2-1].alt;
+				}
+			</script>
+			<br>
+			<ul>
+				<li>Sunt animale acvatice, marine sau dulcicole.</li>
+				<li>Corpul este acoperit cu 2 valve, unite printr-un ligament şi muşchi puternici.</li>
+				<li>Capul le lipseşte (acefale).</li>
+				<li>Pentru locomoţie-piciorul musculos în formă de lamă de topor.</li>
+				<li>Respiraţia este branhială (branhii lamelare).</li>
+				<li>Inima este tricamerală (două atrii şi un ventricul).</li>
+				<li class = "reprezentat"><b>Reprezentanţi</b>: scoica de râu (<i>Unio pictorum</i>), scoica de lac (<i>Anodonta cygnea</i>), midia (<i>Mytilus edulis</i>), scoica perliferă (<i>Margarita margaritifera</i>).
+			</ul>
+		</div>
+		<div class = "container" id = "Cefalopode">
+			<h1>Cefalopodele</h1>
+			<!-- Container for the image gallery -->
+			<br>
+			<div class="gen-container">
+
+			  <!-- Full-width images with number text -->
+			  <div class="mySlides3">
+				<div class="numbertext1">1 / 6</div>
+				  <img src="g9.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides3">
+				<div class="numbertext1">2 / 6</div>
+				  <img src="g11.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides3">
+				<div class="numbertext1">3 / 6</div>
+				  <img src="g13.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides3">
+				<div class="numbertext1">4 / 6</div>
+				  <img src="g18.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides3">
+				<div class="numbertext1">5 / 6</div>
+				  <img src="g2.png" style="width:100%">
+			  </div>
+
+			  <div class="mySlides3">
+				<div class="numbertext1">6 / 6</div>
+				  <img src="g3.png" style="width:100%">
+			  </div>
+
+			  <!-- Next and previous buttons -->
+			  <a class="prev1" onclick="plusSlides3(-1)">&#10094;</a>
+			  <a class="next1" onclick="plusSlides3(1)">&#10095;</a>
+
+			  <!-- Image text -->
+			  <div class="caption-container">
+				<p id="caption3"></p>
+			  </div>
+
+			  <!-- Thumbnail images -->
+			  <div class="row">
+				<div class="column">
+				  <img class="demo3 cursor" src="g9.png" style="width:100%" onclick="currentSlide3(1)" alt="Cefalopode">
+				</div>
+				<div class="column"> 
+				  <img class="demo3 cursor" src="g11.png" style="width:100%" onclick="currentSlide3(2)" alt="Cefalopode">
+				</div>
+				<div class="column">
+				  <img class="demo3 cursor" src="g13.png" style="width:100%" onclick="currentSlide3(3)" alt="Cefalopode">
+				</div>
+				<div class="column">
+				  <img class="demo3 cursor" src="g18.png" style="width:100%" onclick="currentSlide3(4)" alt="Cefalopode">
+				</div>
+				<div class="column">
+				  <img class="demo3 cursor" src="g2.png" style="width:100%" onclick="currentSlide3(5)" alt="Cefalopode">
+				</div> 
+				<div class="column">
+				  <img class="demo3 cursor" src="g3.png" style="width:100%" onclick="currentSlide3(6)" alt="Cefalopode">
+				</div>
+			  </div>
+			</div>
+			<script>
+				var slideIndex3 = 1;
+				showSlides3(slideIndex3);
+				
+				function plusSlides3(n) {
+				  showSlides3(slideIndex3 += n);
+				}
+				
+				function currentSlide3(n) {
+				  showSlides3(slideIndex3 = n);
+				}
+				
+				function showSlides3(n) {
+				  var i;
+				  var slides = document.getElementsByClassName("mySlides3");
+				  var dots = document.getElementsByClassName("demo3");
+				  var captionText = document.getElementById("caption3");
+				  if (n > slides.length) {slideIndex3 = 1}
+				  if (n < 1) {slideIndex3 = slides.length}
+				  for (i = 0; i < slides.length; i++) {
+					slides[i].style.display = "none";
+				  }
+				  for (i = 0; i < dots.length; i++) {
+					dots[i].className = dots[i].className.replace(" active", "");
+				  }
+				  slides[slideIndex3-1].style.display = "block";
+				  dots[slideIndex3-1].className += " active";
+				  captionText.innerHTML = dots[slideIndex3-1].alt;
+				}
+			</script>
+			<br>
+			<ul>
+				<li>Animale de pradă bine adaptate, având mobilitate rapidă.</li>
+				<li>Piciorul este transformat în braţe (tentacule) prevăzute cu ventuze, situate în jurul gurii (10 la sepie şi 8 la caracatiţă); în apropierea orificiului bucal se află un sifon (pâlnie), pe unde iese apa.</li>
+				<li>Sepia are un rest de cochilie în interior- <i>osul sepion</i>, iar caracatiţa este lipsită de cochilie.</li>
+				<li>Sistemul nervos este bine dezvoltat, având un "creier" protejat de o capsulă cartilaginoasă (craniul cartilaginos).</li>
+				<li>Ochii sunt bine dezvoltaţi permiţând, vederea cromatică. Adesea cefalopodele au ca organ de protecţie o "pungă cu cerneală" pe care o golesc tulburând apa şi ascunzându-se de duşman.</li>
+				<li>Sexele sunt separate şi si câte o singură glandă genitală. Ouăle sunt eliminate în pachete ("struguri de mare"). Din ouă ies indivizi mici.</li>
+				<li class = "reprezentat"><b>Reprenzentanţi</b>: sepia (<i>Sepia officinalis</i>), caracatiţa (<i>Octupus vulgaris</i>), nautilul (<i>Nautilus pompilus</i>), fosilă vie.</li>
+			</ul>
+		</div>
+		<div class = "container" id = "Importanta">
+			<h1>Importanta</h1>
+			<br>
+			<ul>
+				<li>Numeroase specii sunt comestibile(scoici, midii, stridii, caracatiţe).</li>
+				<li>Valoroase sunt scoicile perlifere.</li>
+				<li>Melcii produc pagube importante in livezi; unii sunt gazde intermediare pentru anumiti paraziti umani sau animali.</li>
+				<li>Molustele fosile numite armoniti au format importante depuneri calcaroase.</li>
+			</ul>
+			<br><br>
+			<h1>Lectia pe scurt</h1>
+			<br><br>
+			<div class="rand">
+				<div class="coloana">
+					<h2>Gasteropodele</h2>
+					<br>
+					<p>Specii adaptate la viata terestra.</p>
+					<p>Este format din: cap(cu 2 perechi de tentacule, pe cele mari fiind ochii), picior musculos, masa viscerala si cochilie(exceptie: limax).</p>
+					<p>Sistemul digestiv: piese de masticatie cornoase(radula si maxila), glande salivare, hepatopancreas, stomac si intestin.</p>
+					<p>Sistemul respirator: manta vascularizata cu rol de plaman - gasteropode terestre; branhii - gasteropode acvatice.</p>
+					<p>Inima: bicamerala - un atriu si un ventricul.</p>
+					<p>Prezinta un singur organ excretor.</p>
+					<p>Inmultire: Prin oua fara metamorfoza - melcii terestri; Prin metamorfoza - melcii acvatici; sunt hermafrodite.</p>
+					</div>
+				<div class="coloana">
+					<h2>Lamelibranhiatele</h2>
+					<br>
+					<p>Sunt animale acvatice, marine sau dulcicole.</p>
+					<p>Corpul este acoperit cu 2 valve, unite printr-un ligament şi muşchi puternici.</p>
+					<p>Capul le lipseşte (acefale).</p>
+					<p>Pentru locomoţie-piciorul musculos în formă de lamă de topor.</p>
+					<p>Respiraţia este branhială (branhii lamelare).</p>
+					<p>Inima este tricamerală (două atrii şi un ventricul).</p>
+				</div>
+				<div class="coloana">
+					<h2>Cefalopodele</h2>
+					<br>
+					<p>Sunt animale de prada acvatice, bine adaptate, cu mobilitate rapida.</p>
+					<p>Sunt formate din: tentacule prevazute cu ventuze(10 - sepie, 8 - caracatiţa) situate in jurul gurii; Sifon - orificiu pe unde iese apa, situat in apropierea orificiului bucal.</p>
+					<p>Sepia prezinta un rest de cochilie(os sepion), caracatiţa nu prezinta cochilie.</p>
+					<p>Prezinta sistem nervos, avand un "creier" protejat intr-un craniu cartilaginos.</p>
+					<p>Ochii acestora permit vedere cromatică.</p>
+					<p>Prezinta un organ de protectie numit "punga cu cerneala" cu care se pot ascunde de dusman.</p>
+					<p>Sexele sunt separate si au cate o singura glanda genitală. Ouăle sunt eliminate in pachete - "struguri de mare".</p>
+				</div>
+			</div>
+		</div>
+		<br>
+		<div id = "footer">
+			<p class = "copy"><b><font color="#FFFFFF">Copyright &copy; 2018 by Purcariu Alexandra, Ifrim Cristian - All Rights Reserved.</font></b></p>
+		</div>
+	</body>
+</html>
